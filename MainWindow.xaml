@@ -1,0 +1,52 @@
+﻿<Window x:Class="CZD.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CZD"
+        mc:Ignorable="d"
+        Title="Double encryption" Height="350" Width="300">
+
+    <!--Encryption form-->
+    <Border Padding="10">
+    <StackPanel>
+        <!--Description-->
+            <TextBlock Text="Please enter a word in the text box below." FontWeight="Bold" Margin="0 10"/>
+
+        <!--Plaintext-->
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="2*"/>
+                    <ColumnDefinition Width="1*"/>
+                </Grid.ColumnDefinitions>
+                <Button x:Name="Atb" Click="Atbash_Click" IsDefault="True" Margin ="10 0 0 0" Grid.Column="1" Content=" Encrypt " Background="#dfff80" BorderBrush="{x:Null}"/>
+                <TextBox x:Name="Plaintext" Padding="3" Grid.Column="0"/>
+            </Grid>
+
+            <!--Atbash encryption-->
+            <TextBlock Text=" Atbash encryption:" Margin=" 0 15 0 5"/>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="2*"/>
+                    <ColumnDefinition Width="1*"/>
+                </Grid.ColumnDefinitions>
+                <StackPanel Grid.Column="0">
+                    <TextBox x:Name="AtbText" Padding="3" IsReadOnly="True" Grid.Column="0" Background="#eee"/>
+                </StackPanel>
+                <StackPanel Grid.Column="1">
+                    <Button x:Name="OTP" Click="OTP_Click" IsDefault="True" Margin=" 10 0 0 0" Padding =" 0 3 0 3" Grid.Column="1" Content="Encrypt" Background="#dfff80" BorderBrush="{x:Null}"/>
+                    </StackPanel>
+            </Grid>
+            
+        <!--Key display-->
+            <TextBlock Text="The automatically generated key is: " Margin="0 15 0 5"/>
+            <TextBox x:Name="KeyText" Padding="3" IsReadOnly="True" Grid.Column="0" Background="#eee"/>
+
+        <!--Cryptotext -->
+            <TextBlock Text="The final cryptoword is: " Margin="0 15 0 5"/>
+            <TextBox x:Name="CryptotextText" Padding="3" IsReadOnly="True" Grid.Column="0" Background="#eee"/>
+
+        </StackPanel>
+    </Border>
+    
+</Window>

@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "OYRz1ubID8FbXbDGaTgjyk44jdi2sVPxnbGVpbU50NFKkz8ViULRGJ7WlKg1PTwP7UNXkd1fOk0Lv9CKHVx48A==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Desi\\Documents\\Uni Ruse\\Year 4\\Semester 1\\Cryptography\\CZD\\CZD\\CZD.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Desi\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.0.1\\microsoft.aspnetcore.app.ref.3.0.1.nupkg.sha512",
+    "C:\\Users\\Desi\\.nuget\\packages\\microsoft.netcore.app.ref\\3.0.0\\microsoft.netcore.app.ref.3.0.0.nupkg.sha512",
+    "C:\\Users\\Desi\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.0.3\\microsoft.netcore.app.host.win-x64.3.0.3.nupkg.sha512",
+    "C:\\Users\\Desi\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\3.0.0\\microsoft.windowsdesktop.app.ref.3.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
